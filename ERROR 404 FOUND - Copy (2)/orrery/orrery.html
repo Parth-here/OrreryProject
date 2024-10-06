@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Orrery Simulator</title>
+    <link rel="stylesheet" href="orrery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    
+
+    <div id="buttons" style="display: flex;">
+        <a class="playquiz1" href="/home/nj.html"><button class="playquiz" >Home</button></a>
+        <a class="playquiz1" href="/explore/hackathon.html"><button class="playquiz" style="margin-left: -597px;">Explore</button></a>
+        <a class="playquiz1" href="/quiz/newpage.html"><button class="playquiz" style="margin-left: -477px;" >Play Quiz</button></a>
+        <a class="playquiz1" href="/earth_near/en.html"><button class="playquiz" style="margin-left: -340px;" >Earth Simulation</button></a>
+       
+        <button class="button1" onclick="setCameraView('top')">Top View</button>
+        <button class="button2" onclick="setCameraView('front')">Front View</button>
+    </div>
+
+   
+
+  
+    
+    <audio autoplay loop>
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+
+<div id="infoBox" style="position: absolute; top: 10px; left: 10px; background: rgba(0, 0, 0, 0.8); color: white; padding: 10px; display: none; font-family: 'Sixtyfour';">
+</div>
+
+
+<div id="infoBox"></div>
+
+    <!-- Buttons for planets -->
+    <div id="planetButtons">
+        <!-- Buttons will be generated here dynamically -->
+    </div>
+
+
+    <!-- <div id="planetInfoBox" class="info-box" style="display: none;"></div> -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+    
+
